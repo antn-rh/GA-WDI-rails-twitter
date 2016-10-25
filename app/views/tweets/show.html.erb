@@ -1,0 +1,11 @@
+<h1> <%= @tweet.user %> (<%= @tweet.location %>)</h1>
+
+<p>
+  "<%= @tweet.text %>"
+</p>
+
+<%= link_to 'Edit this tweet', edit_tweet_path %>
+<br>
+<%= link_to 'Delete this tweet', tweet_path, method: :delete, data: {confirm: 'Are you sure?'} %>
+<br>
+<%= link_to 'Back to main', tweets_path %>

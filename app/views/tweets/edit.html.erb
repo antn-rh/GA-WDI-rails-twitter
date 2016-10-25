@@ -1,0 +1,22 @@
+<h1>Edit this tweet!</h1>
+
+<%= form_for @tweet do |f| %>
+  <div>
+    <%= f.label :user %>
+    <%= f.text_field :user %>
+  </div>
+
+  <div>
+    <%= f.label :text %>
+    <%= f.text_field :text %>
+  </div>
+  
+  <div>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Back to main', tweets_path %>
